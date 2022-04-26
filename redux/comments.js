@@ -12,7 +12,7 @@ export const comments = (state = { errMess: null, comments: []}, action) => {
             comment.id = state.comments.length;
             // comment.id = 55;
             console.log('from the rEDUCER!!!')
-            return {...state,  comment: state.comments.concat(comment)};
+            return {...state,  comments: state.comments.concat(comment)};
 
 
         case ActionTypes.COMMENTS_FAILED:
